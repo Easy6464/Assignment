@@ -1,0 +1,45 @@
+.header{
+    display: block;
+    
+}
+
+.sidebar{
+    display: none;
+}
+/media query for big screens/
+@media screen and (min-width:768px) {
+    .sidebar{
+        display: none !important;
+        
+    }
+    body{
+        background-color: whitesmoke;
+    }
+    
+}
+
+
+
+/media query for small screens/
+@media screen and (max-width: 769px){
+    .header{
+        display: none;
+        
+    }
+
+    body{
+        background-color: rgb(213, 114, 32);
+    }
+    
+}
+
+.sidebar{
+    /additional styling for the sidebar/
+    display: block;
+    position: fixed;
+    left: o;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: aliceblue !important;
+}
